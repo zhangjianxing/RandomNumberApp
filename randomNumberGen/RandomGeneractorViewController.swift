@@ -37,7 +37,7 @@ class RandomGeneractorViewController: UIViewController {
             }
             else{
                 var random = arc4random_uniform(UInt32(diff+1))
-                dashBoard.text = "The Number is: \(random+UInt32(start!))"
+                dashBoard.text = "The Number is: \(Int(random)+(start!))"
                 println("\(random)")
 
                 

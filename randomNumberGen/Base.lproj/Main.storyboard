@@ -39,14 +39,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Number: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWK-jV-eUJ">
-                                <rect key="frame" x="248" y="289" width="105" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Number: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZWK-jV-eUJ">
+                                <rect key="frame" x="16" y="270" width="568" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-IJ-XiN">
-                                <rect key="frame" x="254" y="318" width="92" height="30"/>
+                                <rect key="frame" x="254" y="338" width="92" height="30"/>
                                 <state key="normal" title="Next Number">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -58,8 +58,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hQT-nx-zhV" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="1mp-Z7-gGe"/>
-                            <constraint firstItem="C3E-IJ-XiN" firstAttribute="top" secondItem="ZWK-jV-eUJ" secondAttribute="bottom" constant="8" id="8E5-8T-5EV"/>
-                            <constraint firstAttribute="centerY" secondItem="ZWK-jV-eUJ" secondAttribute="centerY" constant="0.5" id="99p-oz-63r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZWK-jV-eUJ" secondAttribute="trailing" id="78k-7g-N92"/>
+                            <constraint firstItem="C3E-IJ-XiN" firstAttribute="top" secondItem="ZWK-jV-eUJ" secondAttribute="bottom" constant="8" symbolic="YES" id="8E5-8T-5EV"/>
+                            <constraint firstAttribute="centerY" secondItem="ZWK-jV-eUJ" secondAttribute="centerY" id="99p-oz-63r"/>
                             <constraint firstItem="hQT-nx-zhV" firstAttribute="leading" secondItem="RY4-qQ-alb" secondAttribute="trailing" constant="8" id="F9x-go-VIn"/>
                             <constraint firstItem="zf4-0U-Lol" firstAttribute="leading" secondItem="kDC-D9-kAK" secondAttribute="trailing" constant="8" symbolic="YES" id="K0A-LX-poV"/>
                             <constraint firstItem="kDC-D9-kAK" firstAttribute="bottom" secondItem="zf4-0U-Lol" secondAttribute="bottom" id="KrK-Va-4DV"/>
@@ -68,6 +69,7 @@
                             <constraint firstItem="zf4-0U-Lol" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Zpz-or-lWf"/>
                             <constraint firstItem="kDC-D9-kAK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="eOh-3L-R92"/>
                             <constraint firstItem="RY4-qQ-alb" firstAttribute="top" secondItem="kDC-D9-kAK" secondAttribute="bottom" constant="1" id="eme-tv-9GU"/>
+                            <constraint firstItem="ZWK-jV-eUJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="geQ-Mn-Y9U"/>
                             <constraint firstItem="hQT-nx-zhV" firstAttribute="centerY" secondItem="RY4-qQ-alb" secondAttribute="centerY" constant="6" id="hlm-jD-vam"/>
                             <constraint firstAttribute="centerX" secondItem="C3E-IJ-XiN" secondAttribute="centerX" id="mP2-TT-9hB"/>
                             <constraint firstItem="hQT-nx-zhV" firstAttribute="top" secondItem="RY4-qQ-alb" secondAttribute="top" constant="6" id="oGE-EF-Ac7"/>
@@ -75,7 +77,7 @@
                             <constraint firstItem="kDC-D9-kAK" firstAttribute="top" secondItem="zf4-0U-Lol" secondAttribute="top" id="pPv-mR-bsM"/>
                             <constraint firstItem="kDC-D9-kAK" firstAttribute="leading" secondItem="RY4-qQ-alb" secondAttribute="leading" id="tWe-LJ-g2i"/>
                             <constraint firstItem="hQT-nx-zhV" firstAttribute="bottom" secondItem="RY4-qQ-alb" secondAttribute="bottom" constant="6" id="u5A-Wm-b37"/>
-                            <constraint firstAttribute="centerX" secondItem="ZWK-jV-eUJ" secondAttribute="centerX" constant="-0.5" id="udv-KE-qzK"/>
+                            <constraint firstAttribute="centerX" secondItem="ZWK-jV-eUJ" secondAttribute="centerX" id="udv-KE-qzK"/>
                             <constraint firstItem="kDC-D9-kAK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="yCT-op-C9A"/>
                         </constraints>
                     </view>
