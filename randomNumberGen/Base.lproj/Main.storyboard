@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Random Generactor View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="RandomGeneractorViewController" customModule="randomNumberGen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Number (include): " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDC-D9-kAK">
+                                <rect key="frame" x="16" y="20" width="182" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zf4-0U-Lol">
+                                <rect key="frame" x="206" y="20" width="378" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQT-nx-zhV">
+                                <rect key="frame" x="206" y="57" width="378" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Number  (include): " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY4-qQ-alb">
+                                <rect key="frame" x="16" y="51" width="182" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Number: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWK-jV-eUJ">
+                                <rect key="frame" x="248" y="289" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-IJ-XiN">
+                                <rect key="frame" x="254" y="318" width="92" height="30"/>
+                                <state key="normal" title="Next Number">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nqu-6N-KvK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hQT-nx-zhV" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="1mp-Z7-gGe"/>
+                            <constraint firstItem="C3E-IJ-XiN" firstAttribute="top" secondItem="ZWK-jV-eUJ" secondAttribute="bottom" constant="8" id="8E5-8T-5EV"/>
+                            <constraint firstAttribute="centerY" secondItem="ZWK-jV-eUJ" secondAttribute="centerY" constant="0.5" id="99p-oz-63r"/>
+                            <constraint firstItem="hQT-nx-zhV" firstAttribute="leading" secondItem="RY4-qQ-alb" secondAttribute="trailing" constant="8" id="F9x-go-VIn"/>
+                            <constraint firstItem="zf4-0U-Lol" firstAttribute="leading" secondItem="kDC-D9-kAK" secondAttribute="trailing" constant="8" symbolic="YES" id="K0A-LX-poV"/>
+                            <constraint firstItem="kDC-D9-kAK" firstAttribute="bottom" secondItem="zf4-0U-Lol" secondAttribute="bottom" id="KrK-Va-4DV"/>
+                            <constraint firstItem="RY4-qQ-alb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Q82-Kw-dbo"/>
+                            <constraint firstItem="kDC-D9-kAK" firstAttribute="width" secondItem="RY4-qQ-alb" secondAttribute="width" id="Z4f-DZ-DFU"/>
+                            <constraint firstItem="zf4-0U-Lol" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Zpz-or-lWf"/>
+                            <constraint firstItem="kDC-D9-kAK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="eOh-3L-R92"/>
+                            <constraint firstItem="RY4-qQ-alb" firstAttribute="top" secondItem="kDC-D9-kAK" secondAttribute="bottom" constant="1" id="eme-tv-9GU"/>
+                            <constraint firstItem="hQT-nx-zhV" firstAttribute="centerY" secondItem="RY4-qQ-alb" secondAttribute="centerY" constant="6" id="hlm-jD-vam"/>
+                            <constraint firstAttribute="centerX" secondItem="C3E-IJ-XiN" secondAttribute="centerX" id="mP2-TT-9hB"/>
+                            <constraint firstItem="hQT-nx-zhV" firstAttribute="top" secondItem="RY4-qQ-alb" secondAttribute="top" constant="6" id="oGE-EF-Ac7"/>
+                            <constraint firstItem="kDC-D9-kAK" firstAttribute="height" secondItem="RY4-qQ-alb" secondAttribute="height" id="pE5-U9-7ip"/>
+                            <constraint firstItem="kDC-D9-kAK" firstAttribute="top" secondItem="zf4-0U-Lol" secondAttribute="top" id="pPv-mR-bsM"/>
+                            <constraint firstItem="kDC-D9-kAK" firstAttribute="leading" secondItem="RY4-qQ-alb" secondAttribute="leading" id="tWe-LJ-g2i"/>
+                            <constraint firstItem="hQT-nx-zhV" firstAttribute="bottom" secondItem="RY4-qQ-alb" secondAttribute="bottom" constant="6" id="u5A-Wm-b37"/>
+                            <constraint firstAttribute="centerX" secondItem="ZWK-jV-eUJ" secondAttribute="centerX" constant="-0.5" id="udv-KE-qzK"/>
+                            <constraint firstItem="kDC-D9-kAK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="yCT-op-C9A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dashBoard" destination="ZWK-jV-eUJ" id="rWU-9y-Ryx"/>
+                        <outlet property="endNumber" destination="hQT-nx-zhV" id="Akw-aG-M56"/>
+                        <outlet property="startNumber" destination="zf4-0U-Lol" id="EMZ-S7-PeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
